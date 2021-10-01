@@ -4,7 +4,7 @@ import { client } from "../libs/client";
 export default function Home({ news }) {
   return (
     <div>
-      <ul>frefrfrfefer
+      <ul>
         {news.map((news) => (
           <li key={news.id}>
             <Link href={`/news/${news.id}`}>
