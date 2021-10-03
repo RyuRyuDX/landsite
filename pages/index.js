@@ -1,19 +1,46 @@
 import Link from "next/link";
 import { client } from "../libs/client";
+import "@notus-pro/react/tailwind.min.css";
+import Header from "./components/Header/Header"
+import Footer from "./components/Footer/Footer";
+import Concept from "./components/Concept/Concept"
+import GoogleMap from "./components/GoogleMap/GoogleMap";
+import Moment from 'react-moment';
+import 'moment-timezone';
+import React from 'react';
+
 
 export default function Home({ news }) {
   return (
-    <div>
-      <ul>
-        {news.map((news) => (
-          <li key={news.id}>
-            <Link href={`/news/${news.id}`}>
-              <a>{news.title}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <Header />
+        <main >
+          <div className="m-5 border shadow-lg pb-20">
+            <div className="container mx-auto flex flex-col items-center">
+              <div className="text-4xl font-bold p-8">
+                News
+              </div>
+                {news.map((news) => (
+                  <div className=" p-2 underline text-2xl flex flex-wrap items-start text-gray-500 hover:text-black border-yellow-600" key={news.id}>
+                    <Link href={`/components/News/${news.id}`}>
+                      <Moment format="YYYY/MM/DD">
+                        <a className="">{news.publishedAt}</a>
+                      </Moment>
+                    </Link>
+                    <br />
+                    <Link href={`/components/News/${news.id}`}>
+                      <a>　{news.title}</a>
+                    </Link>
+                  </div>
+                ))}
+              
+            </div>
+          </div>
+          <Concept />
+          <GoogleMap />
+        </main>
+      <Footer />
+    </>
   );
 }
 

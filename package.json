@@ -6,16 +6,37 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
+    "build:tailwind": "npm run compile:tailwind && npm run minify:tailwind",
+    "compile:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "minify:tailwind": "node-sass src/assets/styles/tailwind.css src/assets/styles/tailwind.min.css --output-style compressed"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.1",
+    "@notus-pro/react": "1.0.1",
+    "@popperjs/core": "2.5.4",
+    "@tailwindcss/forms": "0.3.2",
+    "chart.js": "2.9.4",
+    "classnames": "2.2.6",
+    "google-map-react": "^2.1.10",
     "microcms-js-sdk": "^1.2.0",
-    "next": "11.1.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "next": "^11.1.2",
+    "prop-types": "15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.2",
+    "react-moment": "^1.1.1",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.6",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^2.2.16"
   }
 }
