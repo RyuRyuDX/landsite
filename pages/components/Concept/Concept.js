@@ -5,10 +5,10 @@ import React from "react"
 export default function Concept() {
   return(
     <>
-      <div className="m-5">
+      <div className="m-7">
         <div className="pb-10 border shadow-lg">
-          <div className="p-6 flex flex-col items-center">
-            <div className="pb-10 text-4xl font-bold ">Concept</div>
+          <div className="px-6 flex flex-col items-center">
+            <div className="text-4xl font-thin border-2 border-black px-10 py-1 my-7">Concept</div>
               
               <p className="font-bold text-xl">
                 沢山の方に出会える【場所】を… <br/><br/>

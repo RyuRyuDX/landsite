@@ -16,7 +16,8 @@ export default function GoogleMap() {
 
     return (
       //サイズの大きさを指定
-      <div style={{ height: '400px', width: '100%' }}>
+      <div className=""
+      style={{ height: '400px', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAP_KEY }}
           defaultCenter={defaultLatLng}

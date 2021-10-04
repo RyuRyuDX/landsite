@@ -8,6 +8,7 @@ import GoogleMap from "./components/GoogleMap/GoogleMap";
 import Moment from 'react-moment';
 import 'moment-timezone';
 import React from 'react';
+import Navbar from "./components/Navbar/Navbar";
 
 
 export default function Home({ news }) {
@@ -15,13 +16,13 @@ export default function Home({ news }) {
     <>
       <Header />
         <main >
-          <div className="m-5 border shadow-lg pb-20">
-            <div className="container mx-auto flex flex-col items-center">
-              <div className="text-4xl font-bold p-8">
+          <div className="m-7 border shadow-lg pb-20">
+            <div className="container mx-auto flex flex-col items-center" >
+              <div className="text-4xl font-thin border-2 border-black px-10 py-1 my-7">
                 News
               </div>
                 {news.map((news) => (
-                  <div className=" p-2 underline text-2xl flex flex-wrap items-start text-gray-500 hover:text-black border-yellow-600" key={news.id}>
+                  <div className=" pb-2 underline text-xl flex items-start text-gray-600 hover:text-gray-200 border-yellow-600" key={news.id}>
                     <Link href={`/components/News/${news.id}`}>
                       <Moment format="YYYY/MM/DD">
                         <a className="">{news.publishedAt}</a>
