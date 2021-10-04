@@ -8,7 +8,6 @@ import GoogleMap from "./components/GoogleMap/GoogleMap";
 import Moment from 'react-moment';
 import 'moment-timezone';
 import React from 'react';
-import Navbar from "./components/Navbar/Navbar";
 
 
 export default function Home({ news }) {
