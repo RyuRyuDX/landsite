@@ -17,7 +17,7 @@ export default function Home({ news }) {
         <main >
           <div className="m-7 border shadow-lg pb-20">
             <div className="container mx-auto flex flex-col items-center" >
-              <div className="text-4xl font-thin border-2 border-black px-10 py-1 my-7">
+              <div className="text-4xl font-thin border border-black px-10 py-1 my-7">
                 News
               </div>
                 {news.map((news) => (
