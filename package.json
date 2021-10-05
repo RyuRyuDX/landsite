@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.1",
+    "@mui/material": "^5.0.2",
     "@notus-pro/react": "1.0.1",
     "@popperjs/core": "2.5.4",
     "@tailwindcss/forms": "0.3.2",

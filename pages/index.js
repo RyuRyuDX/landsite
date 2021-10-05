@@ -15,9 +15,9 @@ export default function Home({ news }) {
     <>
       <Header />
         <main >
-          <div className="m-7 border shadow-lg pb-20">
+          <div className="mx-7 mb-7 mt-20 border shadow-lg pb-20">
             <div className="container mx-auto flex flex-col items-center" >
-              <div className="text-4xl font-thin border border-black px-10 py-1 my-7">
+              <div className="text-4xl font-thin border border-black px-10 py-1 mt-10 mb-20">
                 News
               </div>
                 {news.map((news) => (
