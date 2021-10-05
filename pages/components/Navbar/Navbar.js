@@ -9,6 +9,7 @@ import { red } from '@mui/material/colors';
 import ContentCutIcon from '@mui/icons-material/ContentCut';
 import EventSharpIcon from '@mui/icons-material/EventSharp';
 import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
+import ListSharpIcon from '@mui/icons-material/ListSharp';
 
 const style = {
   position: 'absolute',
@@ -19,14 +20,16 @@ const style = {
   bgcolor: 'background.paper',
   border: '2px solid #EEEEEE',
   boxShadow: 24,
-  p: 8,
+  p: 5,
   cursor: 'pointer',
+  textAlign: 'center',
 };
 
 const text = {
   color: 'gray',
-  fontSize: '28px',
-  letterSpacing: '7px',
+  fontSize: '29px',
+  letterSpacing: '3px',
+  fontWeight: 'lighter'
 };
 
 export default function Navbar() {
@@ -35,8 +38,10 @@ export default function Navbar() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="flex flex-col justify-center">
-        <Button sx={text} onClick={handleOpen}>Menu</Button>
+    <div className="flex flex-col justify-center shadow-lg mx-7 border-2">
+        <Button sx={text} onClick={handleOpen}>
+          <ListSharpIcon />Menu
+        </Button>
 
       <Modal
         open={open}

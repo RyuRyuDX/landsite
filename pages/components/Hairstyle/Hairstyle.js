@@ -3,23 +3,35 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import Masonry from '@mui/lab/Masonry';
+import MasonryItem from '@mui/lab/MasonryItem';
+import Navbar from '../Navbar/Navbar';
 
 export default function Hairstyle() {
   return (
-    <Box sx={{ width: 500, height: 450, overflowY: 'scroll' }}>
-      <ImageList variant="masonry" cols={3} gap={8}>
+    <>
+      <Header />
+      <Navbar />
+      <div className="m-7">
+      <Box sx={{ width: 'auto', minHeight: 829, textAlign: 'center' }}>
+      <Masonry columns={3} spacing={2}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}>
+          <MasonryItem key={item.img}>
             <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+              src={`${item.img}?w=162&auto=format`}
+              srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
               alt={item.title}
               loading="lazy"
             />
-          </ImageListItem>
+          </MasonryItem>
         ))}
-      </ImageList>
+      </Masonry>
     </Box>
+        <Footer />
+      </div>
+    </>
   );
 }
 

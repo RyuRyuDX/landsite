@@ -9,7 +9,7 @@ export default function Concept() {
         <div className="pb-10 border shadow-lg">
           <div className="px-6 flex flex-col items-center">
             <div className="text-4xl font-thin border border-black px-10 py-2 mt-10 mb-20">
-              CONCEPT
+              Concept
             </div>
               
               <p className="font-bold text-xl">
