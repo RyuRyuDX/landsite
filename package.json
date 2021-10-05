@@ -13,7 +13,10 @@
     "minify:tailwind": "node-sass src/assets/styles/tailwind.css src/assets/styles/tailwind.min.css --output-style compressed"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
     "@fortawesome/fontawesome-free": "5.15.1",
+    "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
     "@notus-pro/react": "1.0.1",
     "@popperjs/core": "2.5.4",
