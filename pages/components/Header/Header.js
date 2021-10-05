@@ -7,7 +7,7 @@ import Image from "next/image"
 export default function Header() {
   return (
     <>
-      <div className="flex justify-center">
+      <div className="flex justify-center mb-20">
         <Image 
           src="/land_logo.jpg" width={800} height={900} 
           />

@@ -8,7 +8,9 @@ export default function Concept() {
       <div className="m-7">
         <div className="pb-10 border shadow-lg">
           <div className="px-6 flex flex-col items-center">
-            <div className="text-4xl font-thin border border-black px-10 py-1 mt-10 mb-20">Concept</div>
+            <div className="text-4xl font-thin border border-black px-10 py-2 mt-10 mb-20">
+              CONCEPT
+            </div>
               
               <p className="font-bold text-xl">
                 沢山の方に出会える【場所】を… <br/><br/>
@@ -51,7 +53,7 @@ export default function Concept() {
 
               <p>1人1人の髪の毛に合うカラー剤に</p><br/>
 
-              <p>・まとまりを出すトリートメント<br/>
+              <p className="font-bold">・まとまりを出すトリートメント<br/>
               ・ボリュームを出すトリートメント<br/>
               ・手触りを上げるトリートメント</p><br/>
 
@@ -65,7 +67,7 @@ export default function Concept() {
               <p className="font-semibold underline">
               手触りが良くなった
               まとまりが持続するようになった
-              髪にハリコシが出た</p>
+              髪にハリコシが出た</p><br/>
 
               <p>などのお言葉をいただいてます。</p><br/>
 
@@ -77,8 +79,7 @@ export default function Concept() {
               </p>
 
               <p>
-                少しでも気になる点があれば
-                なるべく早くケアしましょう！！<br/>
+                少しでも気になる点があれば、なるべく早くケアしましょう！！<br/>
                 早ければ早い方がより綺麗になります。
               </p><br/>
 

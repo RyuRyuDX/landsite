@@ -5,6 +5,10 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Link from "next/link"
 import EventAvailableSharpIcon from '@mui/icons-material/EventAvailableSharp';
+import { red } from '@mui/material/colors';
+import ContentCutIcon from '@mui/icons-material/ContentCut';
+import EventSharpIcon from '@mui/icons-material/EventSharp';
+import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
 
 const style = {
   position: 'absolute',
@@ -13,9 +17,16 @@ const style = {
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
+  border: '2px solid #EEEEEE',
   boxShadow: 24,
-  p: 4,
+  p: 8,
+  cursor: 'pointer',
+};
+
+const text = {
+  color: 'gray',
+  fontSize: '28px',
+  letterSpacing: '7px',
 };
 
 export default function Navbar() {
@@ -25,7 +36,7 @@ export default function Navbar() {
 
   return (
     <div className="flex flex-col justify-center">
-      <Button onClick={handleOpen}>Menu</Button>
+        <Button sx={text} onClick={handleOpen}>Menu</Button>
 
       <Modal
         open={open}
@@ -34,15 +45,21 @@ export default function Navbar() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Link href={'https://www.youtube.com/watch?v=PV6_O8SuCO4'}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Reservation
-          </Typography>
+          <Link href={"https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000552949"}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <EventSharpIcon />  Reservation
+            </Typography>
           </Link>
-
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          <Link href={"https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000552949"}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <MenuBookSharpIcon />  Menus
+            </Typography>
+          </Link>
+          <Link href="components/Hairstyle/Hairstyle" as="/hairstyle">
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+            <ContentCutIcon />  Hair Styles
+            </Typography>
+          </Link>
         </Box>
       </Modal>
     </div>
