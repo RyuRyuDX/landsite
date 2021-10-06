@@ -13,15 +13,15 @@ export default function newsId({ news }) {
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-5/12 mr-auto ml-auto">
               <h1 className="text-3xl mb-5">{news.title}</h1>
-              <Moment format="YYYY/MM/DD">
-                <p>{news.createdAt}</p>
+              <Moment format="YYYY/MM/DD/　hh:mm">
+                {news.createdAt}
               </Moment>
               <div
                 className="py-10"
                 dangerouslySetInnerHTML={{
                   __html: `${news.body}`,
                 }}
-                />
+              />
             </div>
           </div>
         </div>

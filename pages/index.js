@@ -22,13 +22,12 @@ export default function Home({ news }) {
               <div className="text-4xl font-thin border border-black px-10 py-2 mt-10 mb-20">
                 News
               </div>
+            </div>
                 {news.map((news) => (
-                  <div className=" pb-2 underline text-xl flex items-start text-gray-600 hover:text-gray-200 border-yellow-600" key={news.id}>
+                  <div className="pb-2 text-xl flex justify-center text-gray-600 hover:text-gray-200 border-yellow-600" key={news.id}>
                     <Link href={`/components/News/${news.id}`}>
                       <Moment format="YYYY/MM/DD">
-                        <a className="">
-                          {news.createdAt}
-                        </a>
+                        {news.createdAt}
                       </Moment>
                     </Link>
                     <br />
@@ -37,8 +36,6 @@ export default function Home({ news }) {
                     </Link>
                   </div>
                 ))}
-              
-            </div>
           </div>
           <Concept />
           <GoogleMap />

@@ -10,14 +10,16 @@ export default function Footer(){
             </a>
           </div>
           <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-            <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div className="lg:w-2/4 md:w-1/2 w-full px-4">
               <h2 className="title-font font-bold text-black tracking-widest text-2xl mb-3">
                 Access
               </h2>
               <nav className="list-none mb-10">
                 <li>
                   <a className="text-black">
-                    茨城県日立市千石町<br/>1-19-6 2F 201
+                    茨城県日立市千石町1-19-6 2F 201<br />
+                    平日10時～19時 / 土日祝日9時～18時<br />
+                    TEL: 0294-32-7059
                   </a>
                 </li>
               </nav>
