@@ -14,7 +14,7 @@ export default function newsId({ news }) {
             <div className="w-full md:w-5/12 mr-auto ml-auto">
               <h1 className="text-3xl mb-5">{news.title}</h1>
               <Moment format="YYYY/MM/DD">
-                <p>{news.publishedAt}</p>
+                <p>{news.createdAt}</p>
               </Moment>
               <div
                 className="py-10"

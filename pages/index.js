@@ -26,7 +26,9 @@ export default function Home({ news }) {
                   <div className=" pb-2 underline text-xl flex items-start text-gray-600 hover:text-gray-200 border-yellow-600" key={news.id}>
                     <Link href={`/components/News/${news.id}`}>
                       <Moment format="YYYY/MM/DD">
-                        <a className="">{news.publishedAt}</a>
+                        <a className="">
+                          {news.createdAt}
+                        </a>
                       </Moment>
                     </Link>
                     <br />

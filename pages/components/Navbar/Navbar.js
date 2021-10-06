@@ -11,6 +11,8 @@ import EventSharpIcon from '@mui/icons-material/EventSharp';
 import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
 import ListSharpIcon from '@mui/icons-material/ListSharp';
 import HomeIcon from '@mui/icons-material/Home';
+import ChromeReaderModeSharpIcon from '@mui/icons-material/ChromeReaderModeSharp';
+import BorderColorIcon from '@mui/icons-material/BorderColor';
 
 const style = {
   position: 'absolute',
@@ -30,7 +32,8 @@ const text = {
   color: 'gray',
   fontSize: '29px',
   letterSpacing: '3px',
-  fontWeight: 'lighter'
+  fontWeight: 'lighter',
+  testTransform: 'none',
 };
 
 export default function Navbar() {
@@ -41,7 +44,7 @@ export default function Navbar() {
   return (
     <div className="flex flex-col justify-center shadow-lg mx-7 border-2">
         <Button sx={text} onClick={handleOpen}>
-          <ListSharpIcon />Menu
+          Menu
         </Button>
 
       <Modal
@@ -61,16 +64,21 @@ export default function Navbar() {
               <EventSharpIcon />  Reservation
             </Typography>
           </Link>
-          <Link href={"https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000552949"}>
+          <Link href={"https://beauty.hotpepper.jp/slnH000552949/coupon/#:~:text=%C2%A0-,LAND,-%E3%80%9010%E6%9C%888"}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
-              <MenuBookSharpIcon />  Menus
+              <MenuBookSharpIcon />  Menu
             </Typography>
           </Link>
-          <Link href="components/Hairstyle/Hairstyle" as="/hairstyle">
+          <Link href={"https://beauty.hotpepper.jp/slnH000552949/blog/"}>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <BorderColorIcon />  Blog
+            </Typography>
+          </Link>
+          {/* <Link href="components/Hairstyle/Hairstyle" as="/hairstyle">
             <Typography id="modal-modal-title" variant="h6" component="h2">
             <ContentCutIcon />  Hair Styles
             </Typography>
-          </Link>
+          </Link> */}
         </Box>
       </Modal>
     </div>
