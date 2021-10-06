@@ -10,6 +10,7 @@ import ContentCutIcon from '@mui/icons-material/ContentCut';
 import EventSharpIcon from '@mui/icons-material/EventSharp';
 import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
 import ListSharpIcon from '@mui/icons-material/ListSharp';
+import HomeIcon from '@mui/icons-material/Home';
 
 const style = {
   position: 'absolute',
@@ -22,7 +23,7 @@ const style = {
   boxShadow: 24,
   p: 5,
   cursor: 'pointer',
-  textAlign: 'center',
+  textAlign: 'left',
 };
 
 const text = {
@@ -50,6 +51,11 @@ export default function Navbar() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+          <Link href="/">
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+              <HomeIcon />  Home
+            </Typography>
+          </Link>
           <Link href={"https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000552949"}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
               <EventSharpIcon />  Reservation

@@ -8,7 +8,7 @@ export default function newsId({ news }) {
   return (
     <>
       <Header />
-      <main className="border m-10 shadow-lg h-full font-sans p-40">
+      <main className="border m-10 shadow-lg h-full p-10">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
             <div className="w-full md:w-5/12 mr-auto ml-auto">
