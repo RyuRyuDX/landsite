@@ -59,6 +59,11 @@ export default function Navbar() {
               <HomeIcon />  Home
             </Typography>
           </Link>
+          <Link href="components/Concept/ConceptDetail" as="/concept">
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+            <ContentCutIcon />  Concept
+            </Typography>       
+          </Link>
           <Link href={"https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000552949"}>
             <Typography id="modal-modal-title" variant="h6" component="h2">
               <EventSharpIcon />  Reservation
@@ -74,9 +79,9 @@ export default function Navbar() {
               <BorderColorIcon />  Blog
             </Typography>
           </Link>
-          <Link href="components/Hairstyle/Hairstyle" as="/hairstyle">
+          <Link href="components/Hairstyle/Hairstyle" as="/style">
             <Typography id="modal-modal-title" variant="h6" component="h2">
-            <ContentCutIcon />  Hair Styles
+            <ContentCutIcon />  Style
             </Typography>
           </Link>
         </Box>

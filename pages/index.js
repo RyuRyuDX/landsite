@@ -9,6 +9,7 @@ import Moment from 'react-moment';
 import 'moment-timezone';
 import React from 'react';
 import Navbar from "./components/Navbar/Navbar"
+import Hairstyle from "./components/Hairstyle/Hairstyle";
 
 
 export default function Home({ news }) {
@@ -19,7 +20,7 @@ export default function Home({ news }) {
         <main >
           <div className="mx-7 mb-7 mt-20 border shadow-lg pb-20">
             <div className="container mx-auto flex flex-col items-center" >
-              <div className="text-4xl font-thin border border-black px-10 py-2 mt-10 mb-20">
+              <div className="text-4xl font-thin border border-black px-10 py-1 mt-10 mb-20">
                 News
               </div>
             </div>
@@ -38,6 +39,7 @@ export default function Home({ news }) {
                 ))}
           </div>
           <Concept />
+          <Hairstyle />
           <GoogleMap />
         </main>
       <Footer />

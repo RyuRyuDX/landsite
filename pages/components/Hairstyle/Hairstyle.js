@@ -12,76 +12,69 @@ import Navbar from '../Navbar/Navbar';
 export default function Hairstyle() {
   return (
     <>
-      <Header />
+      {/* <Header />
+      <Navbar /> */}
       <Navbar />
-        <div className="m-7">
-          <Box sx={{ width: 'auto', minHeight: 829, textAlign: 'center' }}>
-            <Masonry columns={3} spacing={2}>
-              {itemData.map((item) => (
-                <MasonryItem key={item.img}>
-                  <img
-                    src={`${item.img}?w=162&auto=format`}
-                    srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                    alt={item.title}
-                    loading="lazy"
-                  />
-                </MasonryItem>
-              ))}
-            </Masonry>
-          </Box>
+      <div className="m-7">
+        <div className="pb-10 border shadow-lg">
+          <div className="pt-10">
+            <div className="container mx-auto flex flex-col items-center" >
+              <div className="text-4xl font-thin border border-black px-10 py-1 mb-20">
+                Styles
+              </div>
+            </div>
+            <Box sx={{ width: 'auto', minHeight: 829, textAlign: 'center', margin: '0px 7px' }}>
+              <Masonry columns={3} spacing={2}>
+                {itemData.map((item) => (
+                  <MasonryItem key={item.img}>
+                    <img
+                      src={`${item.img}?w=162&auto=format`}
+                      srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                      alt={item.title}
+                      loading="lazy"
+                    />
+                  </MasonryItem>
+                ))}
+              </Masonry>
+            </Box>
+          </div>
         </div>
-      <Footer />
+      </div>
+      {/* <Footer /> */}
     </>
   );
 }
 
 const itemData = [
   {
-    img: 'https://images.unsplash.com/photo-1549388604-817d15aa0110',
-    title: 'Bed',
+    img: '/hair/hair1.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1525097487452-6278ff080c31',
-    title: 'Books',
+    img: '/hair/hair2.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1523413651479-597eb2da0ad6',
-    title: 'Sink',
+    img: '/hair/hair3.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1563298723-dcfebaa392e3',
-    title: 'Kitchen',
+    img: '/hair/hair4.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1588436706487-9d55d73a39e3',
-    title: 'Blinds',
+    img: '/hair/hair5.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1574180045827-681f8a1a9622',
-    title: 'Chairs',
+    img: '/hair/hair6.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1530731141654-5993c3016c77',
-    title: 'Laptop',
+    img: '/hair/hair7.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1481277542470-605612bd2d61',
-    title: 'Doors',
+    img: '/hair/hair8.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1517487881594-2787fef5ebf7',
-    title: 'Coffee',
+    img: '/hair/hair9.jpg',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee',
-    title: 'Storage',
+    // img: '/hair/hair10.jpg',
   },
-  {
-    img: 'https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62',
-    title: 'Candle',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4',
-    title: 'Coffee table',
-  },
+
 ];
