@@ -4,8 +4,6 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Link from "next/link"
-import EventAvailableSharpIcon from '@mui/icons-material/EventAvailableSharp';
-import { red } from '@mui/material/colors';
 import ContentCutIcon from '@mui/icons-material/ContentCut';
 import EventSharpIcon from '@mui/icons-material/EventSharp';
 import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
@@ -13,6 +11,7 @@ import ListSharpIcon from '@mui/icons-material/ListSharp';
 import HomeIcon from '@mui/icons-material/Home';
 import ChromeReaderModeSharpIcon from '@mui/icons-material/ChromeReaderModeSharp';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
 const style = {
   position: 'absolute',
@@ -61,7 +60,7 @@ export default function Navbar() {
           </Link>
           <Link href="components/Concept/ConceptDetail" as="/concept">
             <Typography id="modal-modal-title" variant="h6" component="h2">
-            <ContentCutIcon />  Concept
+            <LightbulbIcon />  Concept
             </Typography>       
           </Link>
           <Link href={"https://beauty.hotpepper.jp/CSP/bt/reserve/?storeId=H000552949"}>

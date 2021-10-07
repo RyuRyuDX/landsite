@@ -1,18 +1,11 @@
-import Link from 'next/link'
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import Masonry from '@mui/lab/Masonry';
 import MasonryItem from '@mui/lab/MasonryItem';
-import Navbar from '../Navbar/Navbar';
 
 export default function Hairstyle() {
   return (
     <>
-
       <div className="m-7">
         <div className="pb-10 border shadow-lg">
           <div className="pt-10">
