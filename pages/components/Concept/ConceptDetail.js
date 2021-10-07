@@ -15,10 +15,10 @@ export default function ConceptDetail() {
               <p className="font-bold text-xl">
                 沢山の方に出会える【場所】を… <br/><br/>
 
-                LAND （ランド）＝ 場所
-              </p><br/><br/>
+                LAND （ランド）＝ 場所<br/><br/>
 
-              <p>幅広い世代の方に愛される美容室</p><br/>
+                幅広い世代の方に愛される美容室
+              </p><br />
 
               <p>
                 人それぞれ髪質が違います。
