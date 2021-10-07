@@ -15,20 +15,20 @@ export default function Staff() {
           </div>
         </div>
         
-        <div className="flex flex-wrap justify-center space-x-8">
-          <div className="overflow-hidden relative justify-end  cursor-pointer capitalize flex flex-col w-72 h-full z-50 object-cover text-white">
+        <div className="flex flex-wrap justify-center">
+          <div className="overflow-hidden relative justify-end  cursor-pointer capitalize m-4 flex flex-col w-72 h-full z-50 object-cover text-white">
             <img src="/staff/akiyama.jpg"/>
             <div className="absolute p-1 flex bg-white text-gray-600 flex-col">
               <span className="font-bold">秋山 知 : 代表</span>
             </div>
           </div>
-          <div className="overflow-hidden relative justify-end  cursor-pointer capitalize flex flex-col w-72 h-full z-50 object-cover text-white">
+          <div className="overflow-hidden relative justify-end  cursor-pointer capitalize m-4 flex flex-col w-72 h-full z-50 object-cover text-white">
             <img src="/staff/miyo.jpg"/>
             <div className="absolute p-1 flex bg-white text-gray-600 flex-col">
               <span className="font-bold">三代 さゆり </span>
             </div>
           </div>
-          <div className="overflow-hidden relative justify-end  cursor-pointer capitalize flex flex-col w-72 h-96 z-50 object-cover text-white">
+          <div className="overflow-hidden relative justify-end  cursor-pointer capitalize m-4 flex flex-col w-72 h-96 z-50 object-cover text-white">
             <img src="/staff/ready.jpg"/>
             <div className="absolute p-1 flex bg-white text-gray-600 flex-col">
               <span className="font-bold">根本 博子</span>
