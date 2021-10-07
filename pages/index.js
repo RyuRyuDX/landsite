@@ -1,25 +1,19 @@
 import Link from "next/link";
 import { client } from "../libs/client";
-import "@notus-pro/react/tailwind.min.css";
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer";
 import Concept from "./components/Concept/Concept";
 import GoogleMap from "./components/GoogleMap/GoogleMap";
-import Moment from 'react-moment';
-import 'moment-timezone';
-import React from 'react';
-import Navbar from "./components/Navbar/Navbar"
+import Moment from "react-moment";
+import "moment-timezone";
+import React from "react";
 import Hairstyle from "./components/Hairstyle/Hairstyle";
-
+import Staff from "./components/Staff/Staff";
 
 export default function Home({ news }) {
   return (
     <>
-      <Header />
-      <Navbar />
         <main >
           <div className="mx-7 mb-7 mt-20 border shadow-lg pb-20">
-            <div className="container mx-auto flex flex-col items-center" >
+            <div className="container mx-auto flex flex-col items-center">
               <div className="text-4xl font-thin border border-black px-10 py-1 mt-10 mb-20">
                 News
               </div>
@@ -39,10 +33,10 @@ export default function Home({ news }) {
                 ))}
           </div>
           <Concept />
+          <Staff />
           <Hairstyle />
           <GoogleMap />
         </main>
-      <Footer />
     </>
   );
 }
