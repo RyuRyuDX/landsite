@@ -25,6 +25,7 @@ const style = {
   p: 5,
   cursor: 'pointer',
   textAlign: 'left',
+  boxShadow: '10px 5px 5px black'
 };
 
 const text = {
