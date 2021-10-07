@@ -12,9 +12,7 @@ import Navbar from '../Navbar/Navbar';
 export default function Hairstyle() {
   return (
     <>
-      {/* <Header />
-      <Navbar /> */}
-      <Navbar />
+
       <div className="m-7">
         <div className="pb-10 border shadow-lg">
           <div className="pt-10">
