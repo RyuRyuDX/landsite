@@ -14,6 +14,7 @@ export default function Hairstyle() {
     <>
       {/* <Header />
       <Navbar /> */}
+      <Navbar />
       <div className="m-7">
         <div className="pb-10 border shadow-lg">
           <div className="pt-10">
@@ -22,7 +23,7 @@ export default function Hairstyle() {
                 Styles
               </div>
             </div>
-            <Box sx={{ width: 'auto', minHeight: 829, textAlign: 'center', margin: '0px 7px' }}>
+            <Box sx={{ width: 'auto', minHeight: '100%', textAlign: 'center', margin: '0px 7px' }}>
               <Masonry columns={3} spacing={2}>
                 {itemData.map((item) => (
                   <MasonryItem key={item.img}>
@@ -71,9 +72,6 @@ const itemData = [
   },
   {
     img: '/hair/hair9.jpg',
-  },
-  {
-    img: '/hair/hair10.jpg',
   },
 
 ];
