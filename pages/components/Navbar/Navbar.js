@@ -30,7 +30,7 @@ const style = {
 
 const text = {
   color: 'gray',
-  fontSize: '32px',
+  fontSize: '20px',
   letterSpacing: '2px',
   fontWeight: 'lighter',
   textTransform: 'none',
