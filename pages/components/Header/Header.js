@@ -9,7 +9,10 @@ export default function Header() {
     <>
       <div className="flex justify-center min-h-screen">
         <Image 
-          src="/land_logo.jpg" width='1000px' height={900} 
+          src="/land_logo.jpg"
+          width={1000}
+          height={900}
+          objectFit="cover"
           />
       </div>
     </>
