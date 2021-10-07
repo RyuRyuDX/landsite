@@ -22,7 +22,7 @@ export default function Concept() {
               </p>
 
               <div className="text-sm underline font-thin border-black px-10 py-1 pt-20 mb-4">
-                <Link href="components/Concept/ConceptDetail" as="/concept">
+                <Link href="/components/Concept/ConceptDetail" as="/concept">
                   more
                 </Link>
               </div>
