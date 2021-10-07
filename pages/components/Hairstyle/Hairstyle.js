@@ -74,7 +74,7 @@ const itemData = [
     img: '/hair/hair9.jpg',
   },
   {
-    // img: '/hair/hair10.jpg',
+    img: '/hair/hair10.jpg',
   },
 
 ];
