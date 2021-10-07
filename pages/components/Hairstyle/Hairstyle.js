@@ -14,23 +14,23 @@ export default function Hairstyle() {
     <>
       <Header />
       <Navbar />
-      <div className="m-7">
-      <Box sx={{ width: 'auto', minHeight: 829, textAlign: 'center' }}>
-      <Masonry columns={3} spacing={2}>
-        {itemData.map((item) => (
-          <MasonryItem key={item.img}>
-            <img
-              src={`${item.img}?w=162&auto=format`}
-              srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-              alt={item.title}
-              loading="lazy"
-            />
-          </MasonryItem>
-        ))}
-      </Masonry>
-    </Box>
-        <Footer />
-      </div>
+        <div className="m-7">
+          <Box sx={{ width: 'auto', minHeight: 829, textAlign: 'center' }}>
+            <Masonry columns={3} spacing={2}>
+              {itemData.map((item) => (
+                <MasonryItem key={item.img}>
+                  <img
+                    src={`${item.img}?w=162&auto=format`}
+                    srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading="lazy"
+                  />
+                </MasonryItem>
+              ))}
+            </Masonry>
+          </Box>
+        </div>
+      <Footer />
     </>
   );
 }

@@ -74,11 +74,11 @@ export default function Navbar() {
               <BorderColorIcon />  Blog
             </Typography>
           </Link>
-          {/* <Link href="components/Hairstyle/Hairstyle" as="/hairstyle">
+          <Link href="components/Hairstyle/Hairstyle" as="/hairstyle">
             <Typography id="modal-modal-title" variant="h6" component="h2">
             <ContentCutIcon />  Hair Styles
             </Typography>
-          </Link> */}
+          </Link>
         </Box>
       </Modal>
     </div>
