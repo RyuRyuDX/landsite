@@ -30,10 +30,10 @@ const style = {
 
 const text = {
   color: 'gray',
-  fontSize: '29px',
-  letterSpacing: '3px',
+  fontSize: '32px',
+  letterSpacing: '2px',
   fontWeight: 'lighter',
-  testTransform: 'none',
+  textTransform: 'none',
 };
 
 export default function Navbar() {
