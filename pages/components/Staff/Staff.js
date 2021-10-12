@@ -29,7 +29,7 @@ export default function Staff() {
             </div>
           </div>
           <div className="overflow-hidden relative justify-end  cursor-pointer capitalize m-4 flex flex-col w-72 h-96 z-50 object-cover text-white">
-            <img src="/staff/ready.jpg"/>
+            <img src="/staff/nemoto.jpg"/>
             <div className="absolute p-1 flex bg-white text-gray-600 flex-col">
               <span className="font-bold">根本 博子</span>
             </div>
