@@ -7,9 +7,7 @@ import Link from "next/link"
 import ContentCutIcon from '@mui/icons-material/ContentCut';
 import EventSharpIcon from '@mui/icons-material/EventSharp';
 import MenuBookSharpIcon from '@mui/icons-material/MenuBookSharp';
-import ListSharpIcon from '@mui/icons-material/ListSharp';
 import HomeIcon from '@mui/icons-material/Home';
-import ChromeReaderModeSharpIcon from '@mui/icons-material/ChromeReaderModeSharp';
 import BorderColorIcon from '@mui/icons-material/BorderColor';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 
@@ -46,12 +44,13 @@ export default function Navbar() {
           Menu
         </Button>
 
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          
         <Box sx={style}>
           <Link href="/">
             <Typography id="modal-modal-title" variant="h6" component="h2">

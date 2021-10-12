@@ -1,8 +1,5 @@
 import React from "react"
 import Image from "next/image"
-// @notus-pro/react
-// import HeaderImageTitleCenter from "@notus-pro/react/HeaderImageTitleCenter"
-
 
 export default function Header() {
   return (

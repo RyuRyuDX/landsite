@@ -31,10 +31,10 @@ export default function Hairstyle() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }
+
 
 const itemData = [
   {

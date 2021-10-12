@@ -1,8 +1,6 @@
 import { client } from "../../../libs/client";
-import Header from "../Header/Header";
 import Moment from 'react-moment';
 import 'moment-timezone';
-import Footer from "../Footer/Footer";
 
 export default function newsId({ news }) {
   return (
@@ -29,7 +27,7 @@ export default function newsId({ news }) {
   );
 }
 
-// 静的生成のためのパスを指定します
+// 静的生成のためのパスを指定
 export const getStaticPaths = async () => {
   const data = await client.get({ endpoint: "news" });
 
@@ -37,7 +35,7 @@ export const getStaticPaths = async () => {
   return { paths, fallback: false };
 };
 
-// データをテンプレートに受け渡す部分の処理を記述します
+// データをテンプレートに受け渡す部分の処理を記述
 export const getStaticProps = async (context) => {
   const id = context.params.id;
   const data = await client.get({ endpoint: "news", contentId: id });
