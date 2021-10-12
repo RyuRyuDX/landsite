@@ -7,7 +7,6 @@ import Footer from "../Footer/Footer";
 export default function newsId({ news }) {
   return (
     <>
-      <Header />
       <main className="border m-10 shadow-lg h-full p-10">
         <div className="container mx-auto">
           <div className="flex flex-wrap items-center">
@@ -26,7 +25,6 @@ export default function newsId({ news }) {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
